@@ -1,6 +1,6 @@
 /**
  * This is a simple game built with java
- * To win, toggle all the buttons to yellow
+ * Toggle all the yellow buttons to black to solve the puzzle
  * 
  * @author Bob Schmitz
  */
@@ -26,8 +26,10 @@ public class LightsOut extends JFrame {
 		int cols = 5;
 		LightsOut lo = new LightsOut(rows, cols);
 		lo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		lo.setTitle("Lights Out!");
 		lo.pack();
 		lo.setVisible(true);
+		JOptionPane.showMessageDialog(null, "Toggle all the yellow buttons to black to solve the puzzle");
 	}
 	// This is a helper method for toggleLights
 	private void checkToggle(int i) {
@@ -61,15 +63,15 @@ public class LightsOut extends JFrame {
 	}
 	// checkDone helper
 	private boolean checkDone(int i, int length) { 
-		if (!grid[i]) return false;
+		if (grid[i]) return false;
 		if (i+1 == length) return true;
 		return checkDone(i+1, length);
 	}
 	// Reset board and randomize it
 	private void randomize() {
 		for (int i=0; i < button.length; i++) {
-			grid[i]=true;
-			button[i].setBackground(Color.YELLOW);
+			grid[i]=false;
+			button[i].setBackground(Color.BLACK);
 		}
 		randomize(5);
 	}
