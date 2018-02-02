@@ -57,15 +57,15 @@ public class LightsOut extends JFrame {
 	}
 	// Check if game is complete, reset board if complete
 	private void checkDone() {
-		if (checkDone(0, button.length) == false) return;
+		if (checkDone(0) == false) return;
 		JOptionPane.showMessageDialog(null, "You Win!");
 		randomize();
 	}
 	// checkDone helper
-	private boolean checkDone(int i, int length) { 
+	private boolean checkDone(int i) { 
 		if (grid[i]) return false;
-		if (i+1 == length) return true;
-		return checkDone(i+1, length);
+		if (i+1 == grid.length) return true;
+		return checkDone(i+1);
 	}
 	// Reset board and randomize it
 	private void randomize() {
@@ -73,7 +73,10 @@ public class LightsOut extends JFrame {
 			grid[i]=false;
 			button[i].setBackground(Color.BLACK);
 		}
-		randomize(5);
+		// Toggle random buttons
+		randomize(6);
+		// If puzzle solved after randomizing, redo
+		if (checkDone(0) == true) randomize();
 	}
 	// Helper method for randomize
 	private void randomize(int count) {
