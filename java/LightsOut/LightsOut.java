@@ -7,6 +7,7 @@
 
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -98,7 +99,8 @@ public class LightsOut extends JFrame {
 		Container pane = getContentPane();
 		pane.setLayout(new GridLayout(rows, cols));
 		for (int i=0; i < button.length; i++) {
-			button[i] = new JButton(" ");
+			button[i] = new JButton();
+			button[i].setPreferredSize(new Dimension(50, 50));
 			button[i].putClientProperty("index", i);
 			button[i].addActionListener(listener);
 			pane.add(button[i]);
