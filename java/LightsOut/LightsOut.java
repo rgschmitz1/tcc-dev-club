@@ -35,7 +35,7 @@ public class LightsOut extends JFrame {
 	// This is a helper method for toggleLights
 	private void checkToggle(int i) {
 		// Toggle index light
-		if (grid[i] == true) {
+		if (grid[i]) {
 			grid[i]=false;
 			button[i].setBackground(Color.BLACK);
 		} else {
@@ -48,7 +48,7 @@ public class LightsOut extends JFrame {
 		// Toggle selected button
 		checkToggle(i);
 		// Toggle one button up
-		if (i > 5) checkToggle(i-5);
+		if (i > 4) checkToggle(i-5);
 		// Toggle one button down
 		if (i < 20) checkToggle(i+5);
 		// Toggle one button to the left
@@ -58,7 +58,7 @@ public class LightsOut extends JFrame {
 	}
 	// Check if game is complete, reset board if complete
 	private void checkDone() {
-		if (checkDone(0) == false) return;
+		if (!checkDone(0)) return;
 		JOptionPane.showMessageDialog(null, "You Win!");
 		randomize();
 	}
@@ -77,7 +77,7 @@ public class LightsOut extends JFrame {
 		// Toggle random buttons
 		randomize(6);
 		// If puzzle solved after randomizing, redo
-		if (checkDone(0) == true) randomize();
+		if (checkDone(0)) randomize();
 	}
 	// Helper method for randomize
 	private void randomize(int count) {
