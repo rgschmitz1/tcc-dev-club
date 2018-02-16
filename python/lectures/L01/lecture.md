@@ -46,10 +46,10 @@ method and function calls work ecatly the way they do in java.
 
 e.g. to find the area of a circle with a radius of 5:
 
-'''python
+```python
 import math
 radius = math.pi\*math.pow(5, 2)
-'''
+```
 
 ## More Minor Differences from Java to Python
 
@@ -77,7 +77,7 @@ Basic control flow is similar to java. if, else, and while statements are pretty
 
 > **A quick note about scopes**: Python doesn't use curly braces for scoping. Python detects scope changes by the level of indentation. e.g.
 
-'''python
+```python
 i = 0
 while (i < 3):
     print(i)
@@ -87,10 +87,10 @@ print()
 while i < 6:
     print(i)
     i += 1
-'''
+```
 
 will produce the folloing output
-'''python
+```python
 0
 1
 2
@@ -98,7 +98,7 @@ will produce the folloing output
 3
 4
 5
-'''
+```
 
 In python `else if` is written as `elif`
 
@@ -108,38 +108,38 @@ Python doesn't actually have the standard for loop that you see in most language
 
 The python for loop syntax is defined as `for element in iterebale` where element is a name defined every for loop. and iterable can be a list, a tuple, another data type that suports iteration or a special function called a generator. e.g.
 
-'''python
+```python
 sentence = ['Hello', 'my', 'name', 'is', 'Josie']
 for word in sentence:
     print(word)
-'''
+```
 
 will output
 
-'''python
+```python
 Hello
 my
 name
 is
 Josie
-'''
+```
 
 > **A quick note about generators** I won't go into much detail about these now, but a generator is essentially a function that remembers the values inside of its scope every time it's called. python has a lot of functions that return generators as a way to make writing for loops more intuitive. One of the most common generator functions is `range`. when you pass one positve integer argument into range, it gives you a generator that returns all the values from 0 to the number before the one you passed. e.g.
 
-'''python
+```python
 for i in range(5):
     print(i)
-'''
+```
 
 will output
 
-'''python
+```python
 0
 1
 2
 3
 4
-'''
+```
 
 `range` is a very useful function, and I encourage you all to read the documentation on it. Some other useful generator functions are `zip`, `filter`, `map`
 
@@ -147,9 +147,9 @@ will output
 
 defining functions in python is very different from java. Defining a function looks like
 
-'''python
+```python
 def foo(parameter, another_parameter):
     return 1
-''' 
+``` 
 
 This defines a function named foo that takes 2 parameters and always returns 1. There are a lot more to functions. For instance, parameters can have default values, functions can have any number of unspecified parameters using some special syntax called packing. Both of these are more advanced features, and this lecture won't go over them.
