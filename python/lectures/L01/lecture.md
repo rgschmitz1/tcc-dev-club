@@ -53,25 +53,25 @@ radius = math.pi\*math.pow(5, 2)
 
 ## More Minor Differences from Java to Python
 
-#### Exponentiation Operator
+### Exponentiation Operator
 
 The last example used `math.pow` to showcase using a function from an imported module. However, it is more common that you'll see the \*\* operator to perform exponentiation. e.g. `5**2`
 
-#### Division
+### Division
 
 Starting from Python 3, the division operator performs actual division even if you're dividing 2 integers. This means that dividing any two types of numbers will always return a `float`.
 
 Python 3 still has the capability to perform integer division however. Simply use the `//` operator. This will also work for any mixture of `int`s and `float`s. Integer division will always return an integer
 
-#### Comments and Docstrings
+### Comments and Docstrings
 
 Python uses `#` symbol for comments. e.g. `# This is a comment in python`
 
 If you're reading other python code, you might run into triple quotes. This is actually what's called a docstring (usually). The first instance of text wrapped in triple quotes that python finds within a function, method, class or module is assigned as the documentation of that scope. Triple quotes can actully be used as regular strings but this is uncommon.
 
-# Control Flow
+## Control Flow
 
-#### Basics
+### Basics
 
 Basic control flow is similar to java. if, else, and while statements are pretty much the same. the only difference is that you don't *need* parentheses (you can still include them if you want to, and in fact they come in handy when you have a long expression that you'd rather break up into multiple lines). At the end of your control statement, before the code that goes inside of its scope, you need a colon. Everything within the scope of the control statement needs to be indented one more level than the control statement itself.
 
@@ -102,7 +102,7 @@ will produce the folloing output
 
 In python `else if` is written as `elif`
 
-#### For Loops
+### For Loops
 
 Python doesn't actually have the standard for loop that you see in most languages. Python's for loop is actually a for each loop. What this means is that for loops in python atually iterate over each element in a list or "iterable"
 
@@ -143,7 +143,7 @@ will output
 
 `range` is a very useful function, and I encourage you all to read the documentation on it. Some other useful generator functions are `zip`, `filter`, `map`
 
-# Defining Functions
+## Defining Functions
 
 defining functions in python is very different from java. Defining a function looks like
 
