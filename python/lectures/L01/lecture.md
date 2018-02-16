@@ -48,7 +48,7 @@ e.g. to find the area of a circle with a radius of 5:
 
 ```python
 import math
-radius = math.pi\*math.pow(5, 2)
+radius = math.pi*math.pow(5, 2)
 ```
 
 ## More Minor Differences from Java to Python
