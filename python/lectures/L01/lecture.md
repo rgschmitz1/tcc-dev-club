@@ -90,7 +90,7 @@ while i < 6:
 ```
 
 will produce the folloing output
-```python
+```
 0
 1
 2
@@ -116,7 +116,7 @@ for word in sentence:
 
 will output
 
-```python
+```
 Hello
 my
 name
@@ -133,7 +133,7 @@ for i in range(5):
 
 will output
 
-```python
+```
 0
 1
 2
