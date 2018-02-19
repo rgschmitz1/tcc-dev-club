@@ -4,6 +4,6 @@
 
 TCC Developers Club! <br>
 Various Projects & Information <br><br>
-Winter 2018
+| Winter 2018 |
 
 
