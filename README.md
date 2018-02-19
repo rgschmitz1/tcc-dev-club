@@ -1,4 +1,3 @@
 # TCC Development Club
-Welcome to TCC Development Club repo!
-
-See our [Wiki](https://github.com/rgschmitz1/tcc-dev-club/wiki) for information and resources.
+Club wiki and projects have been moved to a new location, see new page here,
+https://github.com/tcc-dev-club/projects
