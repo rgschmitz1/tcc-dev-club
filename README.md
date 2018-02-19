@@ -1,9 +1,4 @@
 # TCC Developers Club
+Welcome to TCC Developers Club repo!
 
-
-
-TCC Developers Club! <br>
-Various Projects & Information <br><br>
-| Winter 2018 |
-
-
+See our [Wiki](https://github.com/rgschmitz1/tcc-dev-club/wiki) for information and resources.
