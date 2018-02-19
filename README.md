@@ -2,7 +2,8 @@
 
 
 
-TCC Dev Club Projects & Information <br><br>
+TCC Developers Club! <br>
+Various Projects & Information <br><br>
 Winter 2018
 
 
