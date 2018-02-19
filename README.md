@@ -1,8 +1,8 @@
-# TCC-Dev-Club
+# TCC Developers Club
 
 
 
-TCC Dev Club Projects <br><br>
+TCC Dev Club Projects & Information <br><br>
 Winter 2018
 
 
