@@ -1,7 +1,3 @@
-/*
- * this is a simple demo program written in C
- * to compile user 'make' from a terminal
- */
 #include <stdio.h>
 int main(int argc, char **argv) {
 	// output hello world to terminal
